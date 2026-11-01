@@ -20,5 +20,16 @@
     "links": {
       "github": "https://github.com"
     }
+  },
+  {
+    "username": "ICR-1",
+    "name": "ICR-1",
+    "role": "Fullstack Learner",
+    "avatar": "https://avatars.githubusercontent.com/ICR-1",
+    "bio": "Lagi belajar alur kerja Git, branching, dan Pull Request.",
+    "skills": ["JavaScript", "TypeScript", "Python", "Go"],
+    "links": {
+      "github": "https://github.com/ICR-1"
+    }
   }
 ]
