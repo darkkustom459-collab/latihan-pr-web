@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Latihan Pull Request — Web Showcase</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="background-decorations">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+  </div>
+
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <span class="logo-icon">🔀</span>
+        <span class="logo-text">PR Practice <strong>Web</strong></span>
+      </div>
+      <nav class="nav-links">
+        <button id="guide-modal-btn" class="btn btn-outline">📖 Panduan PR</button>
+        <a id="repo-link" href="https://github.com/darkkustom459-collab/latihan-pr-web" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          ⭐ Lihat di GitHub
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badge">🚀 Tempat Latihan Kolaborasi & Pull Request</div>
+      <h1 class="hero-title">Belajar Git & GitHub lewat <span class="gradient-text">Pull Request Nyata</span></h1>
+      <p class="hero-desc">
+        Project web interaktif open-source untuk teman-teman yang ingin belajar flow kolaborasi: Fork, Branching, Edit data, Commit, dan Pull Request (PR).
+      </p>
+
+      <div class="stats-bar">
+        <div class="stat-item">
+          <span class="stat-number" id="contributor-count">0</span>
+          <span class="stat-label">Kontributor Terdaftar</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Terbuka untuk PR</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">0</span>
+          <span class="stat-label">Setup Rumit (No Build Step)</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls-section">
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="search-input" placeholder="Cari nama, username, atau keahlian (skills)..." />
+      </div>
+
+      <div class="filter-chips" id="filter-chips">
+        <button class="chip active" data-filter="all">Semua</button>
+      </div>
+    </section>
+
+    <section class="contributors-section">
+      <div id="contributors-grid" class="cards-grid">
+        <!-- Rendered by app.js -->
+      </div>
+      <div id="empty-state" class="empty-state hidden">
+        <p>🔍 Tidak ditemukan kontributor yang sesuai dengan pencarian.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Panduan PR -->
+  <div id="guide-modal" class="modal-backdrop hidden">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>🛠️ Langkah Membuat Pull Request</h2>
+        <button id="close-modal-btn" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ol class="guide-steps">
+          <li>
+            <strong>1. Fork Repository</strong>
+            <p>Klik tombol <strong>Fork</strong> di kanan atas halaman GitHub repository ini.</p>
+          </li>
+          <li>
+            <strong>2. Clone ke Komputer Kamu</strong>
+            <pre><code>git clone https://github.com/&lt;USERNAME-KAMU&gt;/latihan-pr-web.git
+cd latihan-pr-web</code></pre>
+          </li>
+          <li>
+            <strong>3. Buat Branch Baru</strong>
+            <pre><code>git checkout -b tambah-profil-&lt;namamu&gt;</code></pre>
+          </li>
+          <li>
+            <strong>4. Tambahkan Profilmu</strong>
+            <p>Buka file <code>data/contributors.json</code>, lalu tambahkan objek datamu di dalam array.</p>
+          </li>
+          <li>
+            <strong>5. Commit & Push Perubahan</strong>
+            <pre><code>git add data/contributors.json
+git commit -m "feat: tambah profil &lt;namamu&gt;"
+git push origin tambah-profil-&lt;namamu&gt;</code></pre>
+          </li>
+          <li>
+            <strong>6. Buka Pull Request</strong>
+            <p>Kembali ke GitHub, klik tombol <strong>"Compare & pull request"</strong>, isi keterangan singkat, lalu kirimkan!</p>
+          </li>
+        </ol>
+      </div>
+      <div class="modal-footer">
+        <button id="modal-ok-btn" class="btn btn-primary">Mengerti, Siap Praktik!</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>Dibuat untuk latihan kolaborasi Git & GitHub Pull Request.</p>
+      <p class="footer-sub">Tinggal edit <code>data/contributors.json</code> dan submit PR kamu!</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

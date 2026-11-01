@@ -1,0 +1,24 @@
+[
+  {
+    "username": "darkkustom459-collab",
+    "name": "Dark Kustom",
+    "role": "Project Maintainer",
+    "avatar": "https://avatars.githubusercontent.com/u/260207327?v=4",
+    "bio": "Selamat datang di repo latihan Pull Request! Silakan buat PR pertamamu di sini 🚀",
+    "skills": ["Git", "GitHub", "Web Dev"],
+    "links": {
+      "github": "https://github.com/darkkustom459-collab"
+    }
+  },
+  {
+    "username": "contoh-kontributor",
+    "name": "Contoh Teman",
+    "role": "Frontend Learner",
+    "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=contoh",
+    "bio": "Belajar Git dan Pull Request itu seru dan mudah dipelajari!",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "links": {
+      "github": "https://github.com"
+    }
+  }
+]
