@@ -1,4 +1,5 @@
 // Data cadangan jika dibuka lewat file:// protocol (CORS restriction)
+// Catatan: salinan dari data/contributors.json, jadi perbarui juga di sini saat ada kontributor baru.
 const fallbackContributors = [
   {
     username: "darkkustom459-collab",
@@ -20,6 +21,17 @@ const fallbackContributors = [
     skills: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "https://github.com"
+    }
+  },
+  {
+    username: "ICR-1",
+    name: "ICR-1",
+    role: "Fullstack Learner",
+    avatar: "https://avatars.githubusercontent.com/ICR-1",
+    bio: "Lagi belajar alur kerja Git, branching, dan Pull Request.",
+    skills: ["JavaScript", "TypeScript", "Python", "Go"],
+    links: {
+      github: "https://github.com/ICR-1"
     }
   }
 ];
